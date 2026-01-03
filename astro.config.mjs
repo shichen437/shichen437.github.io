@@ -10,7 +10,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Gowlive",
-      favicon: "./public/favicon.ico",
+      favicon: "/favicon.ico",
       logo: {
         src: "./src/assets/logo.png",
         alt: "Gowlive logo",
@@ -41,6 +41,10 @@ export default defineConfig({
           href: "https://t.me/+ApCMUBMvNa1lNGM1",
         },
       ],
+      components: {
+        Footer: "./src/components/CustomFooter.astro",
+      },
+      lastUpdated: true,
     }),
   ],
 });

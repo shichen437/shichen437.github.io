@@ -10,7 +10,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Gowlive",
-      favicon: "./src/assets/favicon.ico",
+      favicon: "./public/favicon.ico",
       logo: {
         src: "./src/assets/logo.png",
         alt: "Gowlive logo",

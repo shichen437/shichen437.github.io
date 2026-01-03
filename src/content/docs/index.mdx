@@ -1,0 +1,39 @@
+---
+title: "首页"
+description: 基于 Goframe 和 Vue3 构建的直播录制工具，支持 docker 一键部署
+template: splash
+sidebar:
+  hidden: true
+hero:
+  title: "直播录制工具"
+  tagline: 基于 Goframe 和 Vue3 构建的直播录制工具
+  pagefind: false
+  actions:
+    - text: 版本日志
+      link: /changelog/v0/v020
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## 功能特性
+
+<CardGrid stagger>
+  <Card title="直播录制" icon="sourcehut">
+    支持直播录制/历史/预览/仅监控。 <br />
+    当前支持平台：抖音/B站/YY/Bigo
+  </Card>
+  <Card title="主播数据" icon="seti:info">
+    支持获取主播主页数据，每日自动刷新，展示统计图表。
+  </Card>
+  <Card title="文件管理" icon="document">
+    支持文件列表/检测/在线预览。
+  </Card>
+  <Card title="消息通知" icon="comment">
+    支持开播/下播通知。 <br />
+    当前支持渠道：邮箱/钉钉/企业微信/飞书/Gotify。
+  </Card>
+  <Card title="网盘上传" icon="puzzle">
+    支持通过 Openlist 上传到网盘。
+  </Card>
+</CardGrid>

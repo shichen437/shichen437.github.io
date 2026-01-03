@@ -1,0 +1,30 @@
+# build output
+dist
+.vscode/
+
+# dependencies
+node_modules/
+.snowpack/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# Local Netlify folder
+.netlify
+.env*
+.dccache
+
+/temp
+
+*.todo
+ao-wos-helper-design.png
+.astro/

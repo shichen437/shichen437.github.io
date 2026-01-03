@@ -1,0 +1,40 @@
+---
+title: "Home"
+description: "Live streaming recording tool built on Goframe and Vue3, supporting one-click Docker deployment"
+template: splash
+sidebar:
+  hidden: true
+hero:
+  title: "Live Streaming Recorder"
+  tagline: "Live streaming recording tool built on Goframe and Vue3"
+  pagefind: false
+  actions:
+    - text: Changelog
+      link: /changelog/v0/v020
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## Features
+
+<CardGrid stagger>
+  <Card title="Live Recording" icon="sourcehut">
+    Supports live recording/history/preview/monitoring only. <br />
+    Currently supported platforms: Douyin/Bilibili/YY/Bigo
+  </Card>
+  <Card title="Anchor Data" icon="seti:info">
+    Supports obtaining anchor homepage data, automatically refreshed daily,
+    displaying statistical charts.
+  </Card>
+  <Card title="File Management" icon="document">
+    Supports file listing/detection/online preview.
+  </Card>
+  <Card title="Message Notification" icon="comment">
+    Supports live start/end notifications. <br />
+    Currently supported channels: Email/DingTalk/WeChat Work/Feishu/Gotify.
+  </Card>
+  <Card title="Cloud Drive Upload" icon="puzzle">
+    Supports uploading to cloud drives via Openlist.
+  </Card>
+</CardGrid>

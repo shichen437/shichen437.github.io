@@ -1,0 +1,18 @@
+---
+title: Docker Compose 部署
+sidebar:
+  order: 9998
+---
+
+1.  下载 `docker-compose.yaml.example` 文件并重命名:
+    ```bash
+    wget https://raw.githubusercontent.com/shichen437/Gowlive/main/docker-compose.yaml.example -O docker-compose.yaml
+    ```
+2.  根据需要修改 `docker-compose.yaml` 文件。
+
+3.  启动服务:
+    ```bash
+    docker-compose up -d
+    ```
+4.  访问 `http://<YOUR_IP>:12580` 查看应用。
+    > 初始账号密码: `admin` / `gowlive`

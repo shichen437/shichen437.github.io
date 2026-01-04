@@ -1,0 +1,18 @@
+---
+title: Docker Compose Deployment
+sidebar:
+  order: 9998
+---
+
+1.  Download and rename the `docker-compose.yaml.example` file:
+    ```bash
+    wget https://raw.githubusercontent.com/shichen437/Gowlive/main/docker-compose.yaml.example -O docker-compose.yaml
+    ```
+2.  Modify the `docker-compose.yaml` file as needed.
+
+3.  Start the service:
+    ```bash
+    docker-compose up -d
+    ```
+4.  Visit `http://<YOUR_IP>:12580` to view the application.
+    > Initial account password: `admin` / `gowlive`

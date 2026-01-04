@@ -1,0 +1,29 @@
+---
+title: Docker镜像部署
+sidebar:
+  order: 9997
+---
+
+1.  拉取镜像:
+
+    ```bash
+    docker pull shichen437/gowlive:latest
+    ```
+
+2.  运行容器:
+
+    ```bash
+    docker run -d \
+      -p 12580:12580 \
+      -v /data/gowlive:/gowlive/resources/data \
+      -e PROJECT_SM4KEY=abcdefghijklmnopqrstuvwxyz123456 \
+      -e TZ=Asia/Shanghai \
+      --name gowlive \
+      --restart=always \
+      shichen437/gowlive:latest
+    ```
+
+    > **Note:** `-v /data/gowlive:/gowlive/resources/data` 用于持久化存储录播文件和应用数据，请将 `/data/gowlive` 替换为你本地的实际路径。
+
+3.  访问 `http://<YOUR_IP>:12580` 查看应用。
+    > 初始账号密码: `admin` / `gowlive`

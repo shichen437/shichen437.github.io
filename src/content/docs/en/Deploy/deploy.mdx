@@ -1,0 +1,30 @@
+---
+title: Docker Image Deployment
+sidebar:
+  order: 9997
+---
+
+1.  Pull the image:
+
+    ```bash
+    docker pull shichen437/gowlive:latest
+    ```
+
+2.  Run the container:
+
+    ```bash
+    docker run -d \
+      -p 12580:12580 \
+      -v /data/gowlive:/gowlive/resources/data \
+      -e PROJECT_SM4KEY=abcdefghijklmnopqrstuvwxyz123456 \
+      -e PROJECT_LANG=en \
+      -e TZ=Asia/Shanghai \
+      --name gowlive \
+      --restart=always \
+      shichen437/gowlive:latest
+    ```
+
+    > **Note:** `-v /data/gowlive:/gowlive/resources/data` is used for persistent storage of recorded files and application data. Please replace `/data/gowlive` with your actual local path.
+
+3.  Visit `http://<YOUR_IP>:12580` to view the application.
+    > Initial account password: `admin` / `gowlive`

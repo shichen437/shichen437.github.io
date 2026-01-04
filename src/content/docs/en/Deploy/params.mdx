@@ -1,0 +1,24 @@
+---
+title: Params Config
+sidebar:
+  order: 9999
+---
+
+import { Badge } from "@astrojs/starlight/components";
+
+### Project Parameters
+
+- `PROJECT_SM4KEY`<Badge text="Required" variant="danger" />: SM4 Encryption Key (32-bit string)
+  - example：`abcdefghijklmnopqrstuvwxyz123456`
+- `TZ`: Timezone
+  - example：`Asia/Shanghai`
+- `PROJECT_LANG`: Project Language
+  - example：`zh-CN` (`en`, `zh-TW`)
+
+### Openlist Parameters
+
+- `OPENLIST_DOMAIN`: openlist domain
+  - example：`http://192.168.1.1:5444`
+- `OPENLIST_USERNAME`: openlist username
+- `OPENLIST_PASSWORD`: openlist password
+- `OPENLIST_CODE`: openlist 2FA code

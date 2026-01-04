@@ -1,0 +1,24 @@
+---
+title: 参数配置
+sidebar:
+  order: 9999
+---
+
+import { Badge } from "@astrojs/starlight/components";
+
+### 项目参数
+
+- `PROJECT_SM4KEY`<Badge text="必填" variant="danger" />: SM4 加密密钥(32位字符串)
+  - 示例：`abcdefghijklmnopqrstuvwxyz123456`
+- `TZ`: 时区
+  - 示例：`Asia/Shanghai`
+- `PROJECT_LANG`: 语言
+  - 示例：`zh-CN` (`en`, `zh-TW`)
+
+### Openlist 参数
+
+- `OPENLIST_DOMAIN`: openlist域名
+  - 示例：`http://192.168.1.1:5444`
+- `OPENLIST_USERNAME`: openlist用户名
+- `OPENLIST_PASSWORD`: openlist密码
+- `OPENLIST_CODE`: openlist 2FA code

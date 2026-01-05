@@ -17,6 +17,9 @@ export default defineConfig({
       },
       pagination: false,
       pagefind: false,
+      markdown: {
+        headingLinks: false,
+      },
       defaultLocale: "root",
       locales: {
         en: {
@@ -45,6 +48,31 @@ export default defineConfig({
         Footer: "./src/components/CustomFooter.astro",
       },
       lastUpdated: true,
+      sidebar: [
+        {
+          label: "版本日志",
+          translations: {
+            en: "Changelog",
+          },
+          autogenerate: { directory: "Changelog" },
+        },
+        {
+          label: "部署",
+          translations: {
+            en: "Deploy",
+          },
+          autogenerate: { directory: "Deploy" },
+          collapsed: true,
+        },
+        {
+          label: "常见问题",
+          translations: {
+            en: "Faq",
+          },
+          autogenerate: { directory: "Faq" },
+          collapsed: true,
+        },
+      ],
     }),
   ],
 });
